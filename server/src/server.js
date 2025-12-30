@@ -7,8 +7,7 @@ const { loadPlanetsData } = require("./models/planets.model");
 
 const PORT = process.env.PORT || 8000;
 
-const MONGO_URL =
-  "mongodb+srv://krittanat12300_db_user:wBRGAMa1n24rd9aZ@nasacluster.mhgbnd8.mongodb.net/?appName=NASACluster";
+const MONGO_URL = process.env.MONGODB_URI;
 
 const server = http.createServer(app);
 
